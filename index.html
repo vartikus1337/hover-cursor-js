@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<script src="main.js" refer></script>
 <body>
+    <div class="wrapper" data-focus="focus-1" onmouseleave="HideFocus(event)">
+        <div id="focus-1" ></div>
+        <div class="container-focus" id="box-1" data-focus="focus-1" onmouseover="showFocus(event)"></div>
+    </div>
+    <div class="wrapper" data-focus="focus-2" onmouseleave="HideFocus(event)">
+        <div id="focus-2"></div>
+        <div class="container-focus" id="box-2" data-focus="focus-2" onmouseover="showFocus(event)"></div>
+    </div>
     
 </body>
+<script src="main.js" refer></script>
 </html>
